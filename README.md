@@ -1,1 +1,1 @@
-# SDO-Test [![Build Status](https://travis-ci.org/yeoman/yo.svg?branch=master)](https://travis-ci.org/yeoman/yo)
+# SDO-Test [![Build Status](https://app.circleci.com/pipelines/github/DharalPatel/SDO-Test)](https://app.circleci.com/pipelines/github/DharalPatel/SDO-Test)
