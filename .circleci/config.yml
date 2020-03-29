@@ -9,6 +9,9 @@ jobs:
           name: Install dependencies
           command: |
             yarn --frozen-lockfile
+      - run:
+          name: run tests
+          command: yarn test
   pack:
     docker:
       - image: circleci/node:lts
@@ -19,9 +22,9 @@ jobs:
           command: |
           yarn --frozen-lockfile
       - run:
-          name: run tests
+          name: compiles
           command: |
-          yarn test
+          yarn build
 
 workflows:
     build-and-package:
