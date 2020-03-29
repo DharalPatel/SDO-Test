@@ -24,8 +24,8 @@ jobs:
       - run:
           name: compiles
           command: |
-          yarn build
-
+            yarn build
+            
 workflows:
     build-and-package:
       jobs:
