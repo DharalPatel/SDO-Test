@@ -9,6 +9,12 @@ jobs:
           name: Install dependencies
           command: |
             yarn --frozen-lockfile
+  pack:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      -           --
 
 workflows:
     build-and-package:
