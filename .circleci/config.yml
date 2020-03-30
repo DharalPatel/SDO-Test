@@ -11,24 +11,7 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
-  pack:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
-      - run:
-          name: compiles
-          command:
-            npm start
-
 workflows:
     build-and-test:
       jobs:
         - build-and-test
-        - pack:
-           requires:
-              -build-and-test
