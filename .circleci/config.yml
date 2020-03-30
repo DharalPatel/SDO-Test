@@ -23,12 +23,12 @@ jobs:
       - run:
           name: compiles
           command:
-            yarn build
+            npm start
 
 workflows:
     build-and-test:
       jobs:
         - build-and-test
         - pack:
-            requires:
+           requires:
               -build-and-test
